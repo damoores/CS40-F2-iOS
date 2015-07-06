@@ -6,14 +6,28 @@
 //  Copyright (c) 2015 Moore & Daughters. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class Person {
-  var firstName: String
-  var lastName: String
+  class Person : NSObject, NSCoding {
   
-  init (first: String, last: String) {
-    self.firstName = first
-    self.lastName = last
+  var firstName : String
+  var lastName : String
+  var image : UIImage?
+  
+  init (first : String, last : String) {
+    firstName = first
+    lastName = last
+  }
+  
+  required init(coder aDecoder: NSCoder) {
+    firstName = aDecoder.decodeObjectForKey("firstName") as! String
+    lastName = aDecoder.decodeObjectForKey("lastName") as! String
+    image = aDecoder.decodeObjectForKey("image") as? UIImage
+  }
+  
+  func encodeWithCoder(aCoder: NSCoder) {
+    aCoder.encodeObject(firstName, forKey: "firstName")
+    aCoder.encodeObject(lastName, forKey: "lastName")
+    aCoder.encodeObject(image, forKey: "image")
   }
 }

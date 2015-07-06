@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		704A510D1B3B928600561D71 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 704A510C1B3B928600561D71 /* default.jpg */; };
+		704A510F1B45EFFE00561D71 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704A510E1B45EFFE00561D71 /* PersonCell.swift */; };
+		704A51111B46000100561D71 /* People.plist in Resources */ = {isa = PBXBuildFile; fileRef = 704A51101B46000100561D71 /* People.plist */; };
 		70830DEF1B29262A00B8CD18 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70830DEE1B29262A00B8CD18 /* Person.swift */; };
 		70830DF21B29333900B8CD18 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70830DF11B29333900B8CD18 /* DetailViewController.swift */; };
 		BC71D3731B2017E000F1E4FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3721B2017E000F1E4FB /* AppDelegate.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		704A510C1B3B928600561D71 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = default.jpg; path = "Roster AppTests/default.jpg"; sourceTree = SOURCE_ROOT; };
+		704A510E1B45EFFE00561D71 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		704A51101B46000100561D71 /* People.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = People.plist; sourceTree = "<group>"; };
 		70830DEE1B29262A00B8CD18 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		70830DF11B29333900B8CD18 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BC71D36D1B2017E000F1E4FB /* Roster App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roster App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				BC71D3761B2017E000F1E4FB /* Main.storyboard */,
+				704A510E1B45EFFE00561D71 /* PersonCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -120,6 +127,8 @@
 		BC71D3701B2017E000F1E4FB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				704A51101B46000100561D71 /* People.plist */,
+				704A510C1B3B928600561D71 /* default.jpg */,
 				BC71D3711B2017E000F1E4FB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -222,9 +231,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704A51111B46000100561D71 /* People.plist in Resources */,
 				BC71D3781B2017E000F1E4FB /* Main.storyboard in Resources */,
 				BC71D37D1B2017E000F1E4FB /* LaunchScreen.xib in Resources */,
 				BC71D37A1B2017E000F1E4FB /* Images.xcassets in Resources */,
+				704A510D1B3B928600561D71 /* default.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70830DEF1B29262A00B8CD18 /* Person.swift in Sources */,
+				704A510F1B45EFFE00561D71 /* PersonCell.swift in Sources */,
 				BC71D3751B2017E000F1E4FB /* ViewController.swift in Sources */,
 				BC71D3731B2017E000F1E4FB /* AppDelegate.swift in Sources */,
 				70830DF21B29333900B8CD18 /* DetailViewController.swift in Sources */,
